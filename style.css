@@ -1,0 +1,151 @@
+/* style.css */
+
+/* --- Estilos Generales --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.8;
+    background-color: #f4f7f9; /* Gris muy claro de fondo */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* --- Contenedor Principal --- */
+.container {
+    background-color: #ffffff;
+    padding: 30px 45px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    max-width: 800px;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+}
+
+/* --- Tipografía --- */
+h1 {
+    color: #0d47a1; /* Azul oscuro */
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #90caf9; /* Azul claro */
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #1565c0; /* Azul medio */
+    font-size: 1.6em;
+    margin-top: 30px;
+    border-left: 4px solid #42a5f5; /* Azul brillante */
+    padding-left: 10px;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #1976d2; /* Azul estándar de enlace */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- Portada (index.html) --- */
+.cover-container {
+    text-align: center;
+}
+
+.cover-container h1 {
+    font-size: 2.5em;
+    border-bottom: none;
+}
+
+.cover-container p {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.cover-container .author-details {
+    margin-top: 30px;
+    font-size: 1.1em;
+}
+
+/* --- Tabla de Contenido --- */
+.toc-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.toc-list li {
+    background-color: #f8f9fa;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 6px;
+    border-left: 5px solid #64b5f6;
+    transition: all 0.2s ease-in-out;
+}
+
+.toc-list li:hover {
+    transform: translateX(5px);
+    background-color: #e3f2fd;
+    border-left-color: #1976d2;
+}
+
+.toc-list a {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* --- Navegación --- */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+}
+
+.nav-button {
+    background-color: #0d47a1;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #1565c0;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-button.back {
+    background-color: #6c757d; /* Gris para retroceder */
+}
+
+.nav-button.back:hover {
+    background-color: #5a6268;
+}
+
+/* --- Diagrama Placeholder --- */
+.diagram-placeholder {
+    background-color: #e9ecef;
+    border: 2px dashed #b0bec5;
+    padding: 40px;
+    margin: 20px 0;
+    text-align: center;
+    font-style: italic;
+    color: #546e7a;
+    border-radius: 8px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de la Luz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>2. Fundamentos de la Luz y la Propagación</h1>
+        
+        <h2>Naturaleza de la Luz</h2>
+        <p>
+            La luz, en su esencia, exhibe una fascinante dualidad onda-partícula. Se comporta como una onda electromagnética que se propaga en el vacío a una velocidad constante de aproximadamente 299,792 kilómetros por segundo, y también como un flujo de partículas sin masa llamadas fotones. El espectro electromagnético abarca un rango inmenso de longitudes de onda, desde los rayos gamma hasta las ondas de radio. Para las comunicaciones por fibra óptica, las ventanas de interés se sitúan principalmente en la región del infrarrojo cercano (longitudes de onda de 850 nm, 1310 nm y 1550 nm), ya que en estas longitudes el vidrio de sílice presenta una atenuación mínima, permitiendo que la señal viaje más lejos con menos pérdida de potencia.
+        </p>
+
+        <h2>Principios de Óptica Geométrica</h2>
+        <p>
+            La óptica geométrica describe la propagación de la luz en términos de "rayos". Dos de sus principios más básicos son la reflexión y la refracción. La <strong>reflexión</strong> ocurre cuando un rayo de luz incide sobre una superficie y rebota. La <strong>refracción</strong> es el cambio de dirección que experimenta un rayo de luz al pasar de un medio a otro con un índice de refracción diferente (por ejemplo, del aire al agua). Este fenómeno es descrito cuantitativamente por la <strong>Ley de Snell-Descartes</strong>: $n_1 \sin(\theta_1) = n_2 \sin(\theta_2)$, donde $n_1$ y $n_2$ son los índices de refracción de los dos medios, y $\theta_1$ y $\theta_2$ son los ángulos de incidencia y refracción, respectivamente.
+        </p>
+
+        <h2>Reflexión Interna Total (RIT)</h2>
+        <p>
+            Este es el concepto clave para el funcionamiento de la fibra óptica. La RIT ocurre cuando la luz viaja desde un medio con un índice de refracción más alto ($n_1$) hacia uno con un índice más bajo ($n_2$). Según la Ley de Snell, a medida que el ángulo de incidencia $\theta_1$ aumenta, el ángulo de refracción $\theta_2$ también lo hace. Existe un ángulo de incidencia crítico, llamado <strong>ángulo crítico ($\theta_c$)</strong>, para el cual el ángulo de refracción es de 90°. Si el ángulo de incidencia supera este ángulo crítico, la luz no se refracta; en su lugar, se refleja completamente de vuelta al primer medio. En la fibra óptica, se diseña el núcleo con un índice de refracción ligeramente superior al del revestimiento para garantizar que la luz inyectada en un ángulo adecuado quede "atrapada" y se propague a lo largo de la fibra mediante sucesivas reflexiones internas totales.
+        </p>
+        <div class="diagram-placeholder">
+            [Aquí iría un diagrama explicativo de la Reflexión Interna Total, mostrando el núcleo, el revestimiento, y un rayo de luz incidiendo por encima del ángulo crítico]
+        </div>
+
+        <h2>Índice de Refracción</h2>
+        <p>
+            El índice de refracción ($n$) de un material es una medida adimensional que describe cómo se propaga la luz a través de él. Se define como el cociente entre la velocidad de la luz en el vacío ($c$) y la velocidad de la luz en el medio ($v$): $n = c/v$. Un índice de refracción más alto implica una menor velocidad de la luz en el medio. La diferencia precisa en los índices de refracción entre el núcleo y el revestimiento de una fibra óptica es lo que determina el ángulo crítico y, por tanto, la capacidad de la fibra para guiar la luz eficazmente.
+        </p>
+        
+        <div class="nav-buttons">
+            <a href="introduccion.html" class="nav-button back">Retroceder</a>
+            <a href="fundamentos-fibra.html" class="nav-button">Avanzar</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

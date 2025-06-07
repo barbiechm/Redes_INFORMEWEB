@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atenuación y Dispersión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>4. Atenuación y Dispersión</h1>
+        
+        <h2>Atenuación</h2>
+        <p>
+            La <strong>atenuación</strong> es la pérdida de potencia que sufre la señal óptica a medida que se propaga a lo largo de la fibra. Es un factor limitante clave para la distancia de transmisión y se mide en decibelios por kilómetro (dB/km). Las causas principales son:
+        </p>
+        <ul>
+            <li><strong>Absorción:</strong> Causada por el propio material de la fibra y por impurezas. Las impurezas más críticas son los iones hidroxilo (OH-), que absorben fuertemente la luz en ciertas longitudes de onda, creando "picos de agua".</li>
+            <li><strong>Scattering (Dispersión de Rayleigh):</strong> Es la causa dominante de atenuación en las fibras modernas. Se debe a pequeñas variaciones microscópicas en la densidad del vidrio, que dispersan la luz en todas direcciones, provocando una pérdida de la señal guiada.</li>
+            <li><strong>Curvaturas:</strong> Las pérdidas por curvatura (macrocurvaturas, como doblar el cable, y microcurvaturas, imperfecciones a nivel microscópico) pueden hacer que la luz incida en la interfaz núcleo-revestimiento con un ángulo menor al crítico, escapando de la fibra.</li>
+        </ul>
+
+        <h2>Dispersión</h2>
+        <p>
+            La <strong>dispersión</strong> es el fenómeno por el cual un pulso de luz se ensancha a medida que viaja por la fibra. Si los pulsos se ensanchan demasiado, pueden superponerse con los pulsos adyacentes, haciendo imposible distinguir la información en el receptor. Esto limita el ancho de banda o la velocidad de transmisión (bit rate). Los tipos principales son:
+        </p>
+        <ul>
+            <li><strong>Dispersión Modal:</strong> Ocurre únicamente en fibras multimodo. Como los diferentes modos viajan por trayectorias de distinta longitud, llegan al final en momentos diferentes, ensanchando el pulso. Es el tipo de dispersión más severo.</li>
+            <li><strong>Dispersión Cromática:</strong> Ocurre porque el índice de refracción del vidrio depende ligeramente de la longitud de onda de la luz, y ninguna fuente de luz es perfectamente monocromática. Se compone de:
+                <ul>
+                    <li><strong>Dispersión de Material:</strong> Las diferentes longitudes de onda (colores) viajan a velocidades ligeramente distintas en el material.</li>
+                    <li><strong>Dispersión de Guía de Onda:</strong> La forma en que la luz se distribuye entre el núcleo y el revestimiento también depende de la longitud de onda.</li>
+                </ul>
+            </li>
+             <li><strong>Dispersión por Modo de Polarización (PMD):</strong> Ocurre en fibras monomodo. Pequeñas asimetrías en el núcleo hacen que los dos modos de polarización de la luz viajen a velocidades ligeramente diferentes, causando un ensanchamiento del pulso.</li>
+        </ul>
+        
+        <div class="nav-buttons">
+            <a href="fundamentos-fibra.html" class="nav-button back">Retroceder</a>
+            <a href="aplicaciones.html" class="nav-button">Avanzar</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

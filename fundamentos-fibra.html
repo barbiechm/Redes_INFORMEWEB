@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de la Fibra Óptica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>3. Fundamentos de la Fibra Óptica</h1>
+        
+        <h2>Definición y Componentes</h2>
+        <p>
+            Una fibra óptica es una guía de onda dieléctrica que transmite luz a lo largo de su eje. Está compuesta por tres partes concéntricas esenciales:
+            <ul>
+                <li><strong>Núcleo (Core):</strong> Es la parte central de la fibra, hecha de vidrio de alta pureza, por donde viaja la luz. Su diámetro varía según el tipo de fibra (de 9 µm en monomodo a 50 o 62.5 µm en multimodo). Tiene un índice de refracción ($n_1$) ligeramente superior.</li>
+                <li><strong>Revestimiento (Cladding):</strong> Es la capa de material óptico que rodea al núcleo. Su función es crucial: posee un índice de refracción ($n_2$) ligeramente inferior al del núcleo. Esta diferencia ($n_1 > n_2$) es la que permite el fenómeno de la Reflexión Interna Total (RIT), confinando la luz dentro del núcleo.</li>
+                <li><strong>Recubrimiento Protector (Coating):</strong> Es una capa externa, generalmente de plástico o acrilato, que protege a la fibra de daños físicos, abrasiones y la humedad. No tiene propiedades ópticas, su función es puramente mecánica para preservar la integridad de la estructura.</li>
+            </ul>
+            La correcta selección de los materiales y la precisa diferencia en sus índices de refracción son fundamentales para el rendimiento y la eficiencia de la fibra.
+        </p>
+
+        <h2>Tipos de Fibra Óptica</h2>
+        <p>
+            Las fibras ópticas se clasifican principalmente en dos grandes grupos según los modos de propagación que soportan: Multimodo y Monomodo.
+        </p>
+        <h3>Fibra Multimodo (MMF)</h3>
+        <p>
+            La fibra multimodo tiene un núcleo de mayor diámetro, lo que permite que múltiples rayos de luz (modos) viajen simultáneamente a través de ella, cada uno siguiendo una trayectoria ligeramente diferente. Son más fáciles de acoplar y usar con fuentes de luz más económicas como los LEDs, pero están limitadas por la dispersión modal, lo que reduce su ancho de banda y distancia de transmisión. Existen dos subtipos:
+        </p>
+        <ul>
+            <li><strong>Índice Escalonado (Step-Index):</strong> El núcleo tiene un índice de refracción uniforme. Los diferentes modos viajan en zig-zag a distintas velocidades, llegando al final de la fibra en momentos diferentes. Esto provoca un ensanchamiento del pulso (dispersión modal) que limita severamente el ancho de banda.</li>
+            <li><strong>Índice Gradual (Graded-Index):</strong> El índice de refracción del núcleo disminuye gradualmente desde el centro hacia el borde. Esto hace que los rayos que viajan por trayectorias más largas (cerca del borde) se muevan más rápido que los que viajan por el centro. El resultado es que todos los modos tienden a llegar al final casi al mismo tiempo, reduciendo drásticamente la dispersión modal y permitiendo un mayor ancho de banda que las de índice escalonado.</li>
+        </ul>
+
+        <h3>Fibra Monomodo (SMF)</h3>
+        <p>
+            La fibra monomodo tiene un núcleo extremadamente delgado (típicamente de 8 a 10 µm). Este pequeño diámetro restringe la luz a un único modo de propagación, un solo rayo que viaja en línea recta por el centro de la fibra. Al eliminar la dispersión modal, las fibras monomodo pueden alcanzar anchos de banda enormes y transmitir señales a distancias muy largas (cientos de kilómetros sin repetidores). Son el estándar para las redes de telecomunicaciones de larga distancia, submarinas y metropolitanas, aunque requieren fuentes de luz láser más precisas y costosas, y sus conectores y empalmes son más delicados.
+        </p>
+
+        <h2>Modos de Propagación</h2>
+        <p>
+            Un "modo" puede entenderse como una posible trayectoria que un rayo de luz puede seguir al propagarse por la fibra. En una fibra multimodo, la gran cantidad de trayectorias posibles hace que la señal original se divida en múltiples componentes que, al llegar desfasados en el tiempo, distorsionan el pulso. En la fibra monomodo, al existir una única trayectoria, el pulso de luz mantiene su forma durante mucho más tiempo, lo que se traduce en una fidelidad de señal mucho mayor y, por tanto, una capacidad de transmisión superior.
+        </p>
+        
+        <div class="nav-buttons">
+            <a href="fundamentos-luz.html" class="nav-button back">Retroceder</a>
+            <a href="atenuacion-dispersion.html" class="nav-button">Avanzar</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
